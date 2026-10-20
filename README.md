@@ -4,10 +4,12 @@ Buscador local para Windows. Solo revisa las carpetas que el usuario elige. No b
 
 ## Primera versión
 
-- Busca por nombre y muestra carpeta, tipo, tamaño y fecha.
-- Permite elegir carpetas, iniciar el escaneo y cancelarlo.
+- Busca por nombre y texto, y filtra por tipo, tamaño y fecha.
+- Permite agregar o quitar carpetas, actualizar el índice y cancelar el escaneo.
+- Detecta cambios mientras la aplicación está abierta.
 - Guarda el índice en el equipo. No sube archivos a internet.
-- No busca dentro del contenido de documentos ni elimina archivos.
+- Busca texto en archivos comunes de hasta 1 MB, como TXT, MD, CSV, LOG, JSON y código.
+- No lee PDF o Word ni elimina archivos.
 
 ## Pantallas
 
@@ -19,7 +21,7 @@ Buscador local para Windows. Solo revisa las carpetas que el usuario elige. No b
 ## Tecnología
 
 - **C# y WPF**
-- **SQLite**
+- **SQLite**, para guardar el índice en el equipo.
 - **.NET 10**
 
 ## Compilar
@@ -27,5 +29,5 @@ Buscador local para Windows. Solo revisa las carpetas que el usuario elige. No b
 Con el SDK de .NET 10 instalado, ejecutar desde esta carpeta:
 
 ```powershell
-dotnet build .\src\SearchFolderPro.Core\SearchFolderPro.Core.csproj
+dotnet run --project .\src\SearchFolderPro.Desktop\SearchFolderPro.Desktop.csproj
 ```

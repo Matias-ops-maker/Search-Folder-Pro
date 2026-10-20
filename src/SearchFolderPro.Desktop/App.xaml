@@ -1,0 +1,11 @@
+<Application x:Class="SearchFolderPro.Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="InkBrush" Color="#20312A" />
+        <SolidColorBrush x:Key="MutedBrush" Color="#718078" />
+        <SolidColorBrush x:Key="AccentBrush" Color="#236B4A" />
+        <SolidColorBrush x:Key="LineBrush" Color="#E1E8E1" />
+    </Application.Resources>
+</Application>
